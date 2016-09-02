@@ -1,0 +1,3 @@
+var global = {
+    carName : 'Merecedez'
+}

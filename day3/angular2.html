@@ -1,0 +1,18 @@
+<html>
+<head>
+
+</head>
+<body ng-app="MyApp">
+  <div ng-controller="MyController as ctrl">
+    <input type="number" ng-model="ctrl.number"/>
+    <div >
+        {{ctrl.number / 65 | currency}}
+    </div>
+    <div >
+      <input type="button" ng-click="ctrl.click()">
+    </div>
+  </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+ <script src="app.js" charset="utf-8"></script>
+</body>
+</html>

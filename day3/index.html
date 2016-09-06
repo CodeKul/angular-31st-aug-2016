@@ -1,0 +1,26 @@
+<html>
+<head>
+
+</head>
+<body onload="myLoad()">
+ <div id="divEmpty">
+ </div>
+
+ <script type="text/javascript">
+    function myLoad(){
+      var divEmpty = document.getElementById('divEmpty');
+
+      var cities = ['India','China','Japan','Shri Lanka','Russia','America'];
+
+      var ul = document.createElement('ul');
+      cities.forEach(function(element){
+        var li = document.createElement('li');
+        var text = document.createTextNode(element);
+        li.appendChild(text);
+        ul.appendChild(li);
+      });
+      divEmpty.appendChild(ul);
+    }
+ </script>
+</body>
+</html>
